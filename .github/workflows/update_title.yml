@@ -1,7 +1,6 @@
 name: Update YouTube title
 
-on:
-  workflow_dispatch:
+- cron: "*/5 * * * *"
 jobs:
   update-title:
     runs-on: ubuntu-latest
