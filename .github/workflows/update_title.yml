@@ -1,7 +1,7 @@
 name: Update YouTube title
-
-on:
-  workflow_dispatch:
+- cron: "*/3 * * * *"
+- name: Install required packages
+      run: pip install google-api-python-client google-auth requests
 jobs:
   update-title:
     runs-on: ubuntu-latest
