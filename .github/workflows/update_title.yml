@@ -1,10 +1,7 @@
 name: Update YouTube title
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"
   workflow_dispatch:
-
 jobs:
   update-title:
     runs-on: ubuntu-latest
